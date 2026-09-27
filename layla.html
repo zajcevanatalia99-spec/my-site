@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+p {
+font-family: ‘Roboto’, sans-serif;
+font-weight: 300;
+}
+
+a {
+font-family: ‘Open Sans’, sans-serif;
+font-weight: 600;
+letter-spacing: 2px;
+}
+
+header {
+  background-color: #703421;
+  padding: 10px;
+}
+
+footer { 
+  background-color: #703421;
+  padding: 10px;
+}
+    
+#menu {
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+z-index: 10;
+}
+
+#menu ul{
+position: relative;
+display: block;
+margin: 0px;
+padding: 0px;
+width: 100%;
+height: auto;
+list-style: none;
+}
+
+#menu > ul::after{
+display: block;
+width: 100%;
+height: 0px;
+clear: both;
+content: ""
+}
+
+#menu ul li{
+position: relative;
+display: block;
+float: left;
+width: auto;
+height: auto;
+}
+
+#menu ul li a {
+display: block;
+padding: 9px 25px 0px 25px;
+font-size: 14px;
+line-height: 1.3em;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+height: 36px;
+box-sizing: border-box;
+color: white;
+border-radius: 5px;
+box-shadow: 1px 1px 3px 3px #ffffff;
+}
+
+#menu ul li ul{
+position: absolute;
+top: 36px;
+left: 0px;
+display: none;
+width: 200px;
+box-shadow: 3px 3px 1px 1px #bfc8f1;
+background: #bfc8f1;
+}
+
+#menu ul li:hover ul{
+display: block;
+}
+
+
+#menu ul li ul li{
+float: none;
+width: 100%;
+}
+
+#menu ul li ul li a{
+display: block;
+text-transform: none;
+height: auto;
+padding: 7px 25px;
+width: 100%;
+box-sizing: border-box;
+border-top: 1px solid #ffffff;
+}
+
+#menu ul li ul li:first-child a{
+border-top: 0px;
+}
+    
+main {
+  padding: 10px;
+  background: linear-gradient(75deg, #598ff6, #e1bbe6); 
+  .gradient-block {
+  width: 100%;
+  height: 100vh;
+}
+
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+  .post h3 {
+  background-color: #ead1de;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+  
+.post img {
+  margin: 20px;
+}
+
+.footer-columns {
+  display: flex;
+}
+  
+.footer-column {
+  flex: 50%;
+  margin: 20px;
+}
+  </style>
+  
+<head>
+ <title>Winx</title>
+</head>
+  
+<body>
+<header>
+<img src="https://upload.wikimedia.org/wikipedia/ru/b/b5/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0_Winx_Club.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" width="290" alt="Winx corporation">
+  
+  <nav id="menu">
+<ul>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a09b1d-08b7-7742-a25b-59321d35eeb3">Home</a></li>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e1c6-4a68-7544-9e82-54c674fbff73">About the cartoon</a>
+   <ul>
+   <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0bec8-964d-754c-8c83-92d6dd96ba68">Characters</a></li>
+     </ul>
+ </li>
+ <ul>
+ <li><a href="#m4">World of Winx</a>
+   <ul>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e232-e86f-711e-8e23-a64609fb01b0">seasons and episodes</a></li>
+<li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e232-e86f-711e-8e23-a64609fb01b0">comics, games, spin-offs</a></li>
+<li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e26d-4628-787d-bb5d-46d85878b310">facts and easter eggs</a></li>
+   </ul>
+ </li>
+<li><a href="https://es-d-03559939520260928-01a0dcef-412b-7185-a78b-b9e532afd460.codepen.dev/#">contact</a></li>
+</ul>
+</ul>
+</nav>
+</header>
+  
+<body>
+ <main>
+  <div class="post">
+    <img height="350" src="https://i.pinimg.com/1200x/93/0b/e3/930be30763f68ad05c7666615e2443dc.jpg" alt="Leyla(Aisha)">
+ 	<div>
+ 	<h3>Лейла(Айша) — фея жидкостей и движения</h3>
+ 	<h5 class="post-info">Дата 19.04.2005,
+ 	Автор: Arina Z</h5>
+ 	<p>
+Лейла родилась 15 июня на планете Андрос — водном мире, где океаны и магия тесно связаны. Она — принцесса и наследница трона, но с детства не хотела быть «образцовой придворной леди». Вместо уроков этикета Лейла сбегала к морю, училась плавать, покорять волны и забираться на скалы. Её воспитывали в духе дисциплины и ответственности, но сама она тянулась к приключениям и свободе.<br>
+С ранних лет Лейла тренировалась: занималась танцами, гимнастикой, боевыми искусствами и разными видами спорта. Это не было просто хобби — она хотела быть готовой защитить свой народ, если понадобится. Её родители ценили её упорство, хотя порой переживали из‑за её импульсивности и склонности сначала действовать, а потом думать.
+  </p>
+ 	<p>
+Лейла присоединилась к Винкс во втором сезоне. К тому моменту команда уже сложилась, и ей пришлось доказывать, что она достойна быть среди них — не только силой, но и преданностью. Она быстро нашла общий язык с подругами.
+ 	</p>
+ 	<p>
+Главная сила Лейлы — управление Морфиксом. Это особое магическое вещество, которое может принимать любые формы: от жидких волн до твёрдых щитов и острых лезвий.
+<br>Важные этапы её силы:<br>
+Чармикс — Лейла получила его, когда преодолела страх остаться одной и поняла, что настоящая сила — в доверии к команде.
+<br>Энчантикс — заработала, пожертвовав своим зрением ради спасения королевы русалок. Это был самоотверженный поступок: она сознательно пошла на потерю способности видеть, чтобы спасти жизнь другому. Позже зрение вернулось, но этот шаг навсегда закрепил её как одну из самых храбрых фей.
+<br>Дальше она осваивала и другие формы (Беливикс, Сиреникс и др.), которые усиливали её контроль над водой и позволяли действовать даже в самых экстремальных условиях — например, глубоко под водой или в вакууме.
+   </p>
+    <p>
+   Лейла — самая спортивная и динамичная из Винкс. Она не любит сидеть на месте: ей нужно двигаться, тренироваться, пробовать новое. Её девиз можно описать как «лучше сделать и ошибиться, чем не сделать вообще». Она импульсивна, иногда вспыльчива, но быстро отходит и не держит зла.
+    </p>
+  </div>
+</main>
+
+  <h3>Комментарии:</h3>
+<div class="comment">
+<h4 class="author">Болли</h4>
+<h5 class="date">19:35 08.08.2026</h5>
+<p>Сила Лейлы — это не просто магия воды, это свобода движения. Её атаки похожи на танец: резкие, плавные, непредсказуемые. Смотреть на её бои — как на крутое шоу. </p>
+
+<h4 class="author">Мени</h4>
+<h5 class="date">06:34 09.08.2026</h5>
+<p>Лейла — это энергия в чистом виде! Она влетает в битву, как шторм: ни секунды на раздумья, сразу действие. Обожаю эту её импульсивность — она не ждёт, пока злодеи сами себя победят!</p>
+
+<h4 class="author">LinaANg3l</h4>
+<h5 class="date">19:28 03.08.2026</h5>
+<p>Обожаю её стиль: спортивный, дерзкий, но при этом такой женственный. Это как будто „я готова к битве, но всё равно выгляжу на миллион“</p>
+
+<h4 class="author">Лей</h4>
+<h5 class="date">08:58 11.08.2026</h5>
+<p>Когда Лейла управляет морфиксом, это выглядит как искусство. Не просто „вода ударила“, а целая хореография из волн и всплесков. Хочется поставить на повтор и разглядывать каждый кадр.</p>
+
+<h4 class="author">Мини</h4>
+<h5 class="date">17:25 24.08.2026</h5>
+<p>Если бы Лейла вела блог про спорт и танцы, я бы смотрела каждое видео. У неё явно есть лайфхак, как за 5 минут зарядиться энергией на весь день. !</p>
+    
+<footer class="site-footer">
+  <!-- Логотип -->
+  <div class="logo-container">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/b/b5/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0_Winx_Club.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" alt="Winx corporation" width="250">
+  </div>
+
+  <!-- Колонки -->
+  <div class="footer-columns">
+    
+    <div class="footer-column">
+      <h3>О нас</h3>
+      <p>Винкс откроют вам новые впечатления. Присоединяйтесь в мир волшебства и магии вместе с главными героинями!</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Свяжитесь с нами</h3>
+      <p>Если хотите сотрудничество на сайте, пишите на почту ниже:</p>
+<strong>Email: <a href="#">Winx@gmail.com</a></strong>
+        </div>
+      </div>
+    <center>
+      <small>Copyright &copy; 2004</small>
+    </center>
+</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
