@@ -1,0 +1,264 @@
+<html lang="en">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+p {
+font-family: ‘Roboto’, sans-serif;
+font-weight: 300;
+}
+
+a {
+font-family: ‘Open Sans’, sans-serif;
+font-weight: 600;
+letter-spacing: 2px;
+}
+
+header {
+  background-color: #5c66a5;
+  padding: 10px;
+}
+
+footer { 
+  background-color: #6d83c4;
+  padding: 10px;
+}
+    
+#menu {
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+z-index: 10;
+}
+
+#menu ul{
+position: relative;
+display: block;
+margin: 0px;
+padding: 0px;
+width: 100%;
+height: auto;
+list-style: none;
+}
+
+#menu > ul::after{
+display: block;
+width: 100%;
+height: 0px;
+clear: both;
+content: ""
+}
+
+#menu ul li{
+position: relative;
+display: block;
+float: left;
+width: auto;
+height: auto;
+}
+
+#menu ul li a {
+display: block;
+padding: 9px 25px 0px 25px;
+font-size: 14px;
+line-height: 1.3em;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+height: 36px;
+box-sizing: border-box;
+color: white;
+border-radius: 5px;
+box-shadow: 1px 1px 3px 3px #383774;
+}
+
+#menu ul li ul{
+position: absolute;
+top: 36px;
+left: 0px;
+display: none;
+width: 200px;
+box-shadow: 3px 3px 1px 1px #c088fb;
+background: #c088fb;
+}
+
+#menu ul li:hover ul{
+display: block;
+}
+
+
+#menu ul li ul li{
+float: none;
+width: 100%;
+}
+
+#menu ul li ul li a{
+display: block;
+text-transform: none;
+height: auto;
+padding: 7px 25px;
+width: 100%;
+box-sizing: border-box;
+border-top: 1px solid #ffffff;
+}
+
+#menu ul li ul li:first-child a{
+border-top: 0px;
+}
+    
+main {
+  padding: 10px;
+  background: linear-gradient(75deg, #bb83fa, #6e69f2); 
+  .gradient-block {
+  width: 100%;
+  height: 100vh;
+}
+
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+  .post h3 {
+  background-color: #ead1de;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+  
+.post img {
+  margin: 20px;
+}
+
+.footer-columns {
+  display: flex;
+}
+
+.footer-column {
+  flex: 50%;
+  margin: 20px;
+}
+  </style>
+  
+<head>
+ <title>Winx</title>
+</head>
+  
+<body>
+<header>
+<img src="https://upload.wikimedia.org/wikipedia/ru/b/b5/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0_Winx_Club.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" width="290" alt="Winx corporation">
+  
+  <nav id="menu">
+<ul>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a09b1d-08b7-7742-a25b-59321d35eeb3">Home</a></li>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e1c6-4a68-7544-9e82-54c674fbff73">About the cartoon</a>
+   <ul>
+   <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0bec8-964d-754c-8c83-92d6dd96ba68">Characters</a></li>
+     </ul>
+ </li>
+ <ul>
+ <li><a href="#m4">World of Winx</a>
+   <ul>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e232-e86f-711e-8e23-a64609fb01b0">seasons and episodes</a></li>
+<li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e232-e86f-711e-8e23-a64609fb01b0">comics, games, spin-offs</a></li>
+<li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e26d-4628-787d-bb5d-46d85878b310">facts and easter eggs</a></li>
+   </ul>
+ </li>
+<li><a href="footer">contact</a></li>
+</ul>
+</ul>
+</nav>
+</header>
+  
+<body>
+ <main>
+  <div class="post">
+    <img height="350" src="https://i.pinimg.com/1200x/6e/b1/b9/6eb1b9a200b3562a2b4213f54d30f576.jpg" alt="Musa">
+ 	<div>
+ 	<h3>Муза — фея музыки и эмоций</h3>
+ 	<h5 class="post-info">Дата 30.01.2004,
+ 	Автор: Arina Z</h5>
+ 	<p>
+Муза родилась 30 мая на планете Мелодия, где сама атмосфера пронизана звуками: здесь ценят не только мелодии, но и тишину, паузы, интонации. Её мама Ва-Нин была великой певицей, а отец Хо-Боэ — талантливым пианистом и мастером музыкальных инструментов. От них Муза унаследовала абсолютный слух и способность чувствовать музыку буквально кожей.<br>
+
+Когда Музе не было и шести лет, её мама умерла. Это стало огромной трагедией: отец, не в силах выносить напоминания о жене, решил навсегда отказаться от музыки и запретил дочери развивать свой талант. Из-за этого между ними надолго возникла стена: Муза чувствовала, что её главная часть — музыкальная — будто под запретом. Она росла упрямой, импульсивной, иногда резкой, но очень искренней. Её способ справляться с эмоциями был простым: надеть наушники, включить что-то громкое и танцевать, пока внутри не станет чуть тише.
+  </p>
+ 	<p>
+В Алфее Муза поначалу казалась замкнутой: она не стремилась быть в центре внимания, но при этом не терпела фальши и сразу чувствовала, если кто-то притворяется. Её прямолинейность многих пугала, но именно эта честность притягивала настоящих друзей.
+ 	</p>
+ 	<p>
+Сила Музы — магия музыки, звука и ритма. Она не просто «использует» музыку как эффект — она делает её оружием, щитом и языком общения с миром.
+Важные этапы её силы:<br>
+
+Чармикс — Муза получила его, когда смогла признаться себе и другим, что ей страшно быть уязвимой в музыке. Это был шаг к тому, чтобы снова позволить себе чувствовать боль и радость через творчество.<br>
+Энчантикс — заработала, когда не оставила принцессу Галатею одну в горящей библиотеке. Муза спасла её, рискуя собой, и именно в этот момент её музыка стала не просто силой, а актом настоящей храбрости.<br>
+Дальше она осваивала и другие формы (Беливикс, Софикс, Лавикс и др.), которые позволяли ей управлять звуком на новых уровнях — от тонких вибраций до мощных резонансов.
+   </p>
+  </div>
+</main>
+
+  <h3>Комментарии:</h3>
+<div class="comment">
+<h4 class="author">Меми</h4>
+<h5 class="date">19:35 08.08.2026</h5>
+<p>Муза — это чистый рок-н-ролл в мире фей! Обожаю, как она одним звуком может снести злодея — прям как на крутом концерте!</p>
+
+<h4 class="author">NinaK</h4>
+<h5 class="date">06:34 09.08.2026</h5>
+<p>Её сила — это буквально саундтрек к эпичным битвам. Без Музы любой бой был бы слишком тихим и грустным.</p>
+
+<h4 class="author">Бемиин</h4>
+<h5 class="date">06:34 09.08.2026</h5>
+<p>Когда Муза включает свой ритм, даже Трикс невольно начинают пританцовывать. Это реально магия!!</p>
+
+<h4 class="author">LinaANg3l</h4>
+<h5 class="date">19:28 03.08.2026</h5>
+<p>Обожаю её стиль: наушники, крутые косички, этот взгляд „я знаю, какой бит сейчас нужен“. Она будто всегда на своей волне — и это круто.</p>
+
+<h4 class="author">Lola</h4>
+<h5 class="date">17:25 24.08.2026</h5>
+<p>Когда Муза включает свой ритм, даже Трикс невольно начинают пританцовывать. Это реально магия!!</p>
+
+  <h4 class="author">Рерон</h4>
+<h5 class="date">22:22 01:01:2027</h5>
+<p>Муза доказывает, что сила — не всегда про огонь и молнии. Иногда достаточно правильного ритма, чтобы всё изменить!</p>
+    
+<footer>
+  <div>
+    <div>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/b/b5/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0_Winx_Club.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" alt="Winx corporation" width="250">
+      </div>
+    </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>О нас</h3>
+          <p>
+   Винкс - откроют вам новые впечатления. Присоединяйтесь в мир волшебства и магии вместе с главными героинями!
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Свяжитесь с нами</h3>
+          <p>
+  Если хотите сотрудничество на сайте пишите на почту ниже:
+            <br><strong>Email: <a href="#">Winx@gmail.com</a></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <center>
+      <small>Copyright &copy; 2004</small>
+    </center>
+</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
