@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style> 
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+  
+  .chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+p {
+font-family: ‘Artical’, sans-serif;
+font-weight: 300;
+}
+
+a {
+font-family: ‘Open Sans’, sans-serif;
+font-weight: 600;
+letter-spacing: 2px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: 20px auto;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.post-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .slide .item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3) {
+    left: 50%;
+}
+.slide .item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5) {
+    left: calc(50% + 440px);
+}
+
+.slide .item:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+.slide .item:nth-child(2) .content {
+    display: block;
+}
+
+.content .name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 20;
+}
+
+.button button {
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background: #d11bb5;
+    color: #fff;
+}
+
+header {
+  background-color: #e394d0;
+  padding: 10px;
+}
+
+footer { 
+  background-color: #7e9efc;
+  padding: 10px;
+}
+    
+#menu {
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+z-index: 10;
+}
+
+#menu ul{
+position: relative;
+display: block;
+margin: 0px;
+padding: 0px;
+width: 100%;
+height: auto;
+list-style: none;
+}
+
+#menu > ul::after{
+display: block;
+width: 100%;
+height: 0px;
+clear: both;
+content: ""
+}
+
+#menu ul li{
+position: relative;
+display: block;
+float: left;
+width: auto;
+height: auto;
+}
+
+#menu ul li a {
+display: block;
+padding: 9px 25px 0px 25px;
+font-size: 14px;
+line-height: 1.3em;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+height: 36px;
+box-sizing: border-box;
+color: white;
+border-radius: 5px;
+box-shadow: 1px 1px 3px 3px #6b315e;
+}
+
+#menu ul li ul{
+position: absolute;
+top: 36px;
+left: 0px;
+display: none;
+width: 200px;
+box-shadow: 3px 3px 1px 1px #6b315e;
+background: #ba6aa7;
+}
+
+#menu ul li:hover ul{
+display: block;
+}
+
+#menu ul li ul li{
+float: none;
+width: 100%;
+}
+
+#menu ul li ul li a{
+display: block;
+text-transform: none;
+height: auto;
+padding: 7px 25px;
+width: 100%;
+box-sizing: border-box;
+border-top: 1px solid #ffffff;
+}
+
+#menu ul li ul li:first-child a{
+border-top: 0px;
+}
+
+main {
+  padding: 10px;
+  background: linear-gradient(75deg, #7e9efc, #e394d0); 
+  .gradient-block {
+  width: 100%;
+  height: 100vh;
+}
+
+.page-content h2:not(.pi-item) {
+    font-size: 22px;
+    border-bottom: none;
+}
+
+.mw-parser-output > h2, .mw-parser-output > h3, .mw-parser-output > h4, .mw-parser-output > h5, .mw-parser-output h2:not(aside h2), .mw-parser-output h3:not(aside h3), .mw-parser-output h4:not(aside h4), .mw-parser-output h5:not(aside h5) {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.post h2 {
+  background-color: #ead1de;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+  
+.post h3 {
+  background-color: #ead1de;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+  
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+.post img {
+  margin: 20px;
+}
+
+.footer-columns {
+  display: flex;
+}
+
+.footer-column {
+  flex: 50%;
+  margin: 20px;
+}
+  </style>
+  
+<head>
+ <title>Winx</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+  <body>
+<header>
+<img src="https://upload.wikimedia.org/wikipedia/ru/b/b5/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0_Winx_Club.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" width="290" alt="Winx corporation">
+  
+  <nav id="menu">
+<ul>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a09b1d-08b7-7742-a25b-59321d35eeb3">Home</a></li>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e1c6-4a68-7544-9e82-54c674fbff73">About the cartoon</a>
+   <ul>
+   <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0bec8-964d-754c-8c83-92d6dd96ba68">Characters</a></li>
+     </ul>
+ </li>
+ <ul>
+ <li><a href="#m3">World of Winx</a>
+   <ul>
+ <li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e232-e86f-711e-8e23-a64609fb01b0">seasons and episodes</a></li>
+<li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e2fb-6819-7bc9-8fee-5d654aaf880f">comics, games, spin-offs</a></li>
+<li><a href="https://codepen.io/editor/jkjipvby-the-animator/pen/01a0e26d-4628-787d-bb5d-46d85878b310">facts and easter eggs</a></li>
+   </ul>
+ </li>
+<li><a href="#footer">contact</a></li>
+</ul>
+</ul>
+</nav>
+</header>
+    
+<main class="feed">
+ <div class="pos">
+  <div class="post">
+    <div>
+          <h2>Название</h2>
+   <p>Название сериала образовано от английского слова <em>wings</em> (с англ. — «крылья»), где последние две буквы заменены буквой Х, которая напоминает скрещенную пару крыльев.</p></div>
+    <div>
+    <h2>Вдохновение</h2>
+    <p>Концепция объединила в себе элементы «Гарри Поттера» (школа магии), «Сейлор Мун» (команда волшебниц) и образ кукол Барби.</p>
+      </div>
+    <div>
+    <h2>Внешний вид героинь</h2>
+  <p>К разработке привлекли стилистов из <strong><b>Dolce & Gabbana и Prada</b></strong>. Были созданы тысячи нарядов, чтобы феи меняли одежду каждую серию.<br>
+Лица героинь списали со знаменитостей начала 2000-х:<br>
+
+<br>• Блум — Бритни Спирс (а её история с приёмными родителями основана на судьбе реальной знакомой Страффи);<br>
+
+• Стелла — Камерон Диас;<br>
+
+• Флора — Дженнифер Лопес;<br>
+
+• Муза — Люси Лью;<br>
+
+• Текна — Пинк;<br>
+
+• Лейла — Бейонсе.
+</p>
+      </div>
+    <div>
+      <h2>Ключевые темы и посыл</h2>
+<p>Главный акцент сериала сделан на ценности <strong><b>бескорыстной дружбы, взаимовыручки и веры в себя</b></strong> — феи побеждают зло только тогда, когда действуют сообща.<br>
+
+Кроме того, Иджинио Страффи <em>(в прошлом — сотрудник Всемирного фонда дикой природы)</em> заложил в сериал важный экологический подтекст:<br>
+
+• В 4 сезоне поднимается проблема вырубки лесов;<br>
+
+• В 5 сезоне — загрязнение мирового океана;<br>
+
+• В 7 сезоне — защита редких и исчезающих видов животных.
+</p>
+    </div>
+     </div>
+  </div>
+  
+<footer>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/b/b5/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0_Winx_Club.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" alt="Winx corporation" width="250">
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>О нас</h3>
+          <p>
+   Винкс - откроют вам новые впечатления. Присоединяйтесь в мир волшебства и магии вместе с главными героинями!
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Свяжитесь с нами</h3>
+          <p>
+  Если хотите сотрудничество на сайте пишите на почту ниже:
+            <br><strong>Email: <a href="#">Winxpedia@gmail.com</a></strong>
+          </p>
+        </div>
+      </div>
+    <center>
+      <small>Copyright &copy; 2004-2026</small>
+    </center>
+</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
